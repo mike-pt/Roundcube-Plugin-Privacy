@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Privacy configuration file
+ */
+
+// Hide folder names from page title
+$config['privacy_hide_mboxes'] = false;
+
+// Hide message subject and attachment names from page title
+$config['privacy_hide_subjects'] = false;
+
+// Clear all cookies on logout
+$config['privacy_clear_cookies'] = false;
+
+?>

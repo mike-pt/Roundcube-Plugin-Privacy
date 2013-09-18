@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.9.0" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+	http://pear.php.net/dtd/tasks-1.0.xsd
+	http://pear.php.net/dtd/package-2.0
+	http://pear.php.net/dtd/package-2.0.xsd">
+	<name>privacy</name>
+	<uri>http://github.com/JohnDoh/Roundcube-Plugin-Privacy/</uri>
+	<summary>Provide simple privacy settings for Roundcube</summary>
+	<description>This plugin adds some simple privace settings to Roundcube, hiding some sensitive information from the browser</description>
+	<lead>
+		<name>Philip Weir</name>
+		<user>JohnDoh</user>
+		<email>roundcube@tehinterweb.co.uk</email>
+		<active>yes</active>
+	</lead>
+	<date>2013-09-15</date>
+	<time>14:09:58</time>
+	<version>
+		<release>0.1</release>
+		<api>0.1</api>
+	</version>
+	<stability>
+		<release>experimental</release>
+		<api>experimental</api>
+	</stability>
+	<license uri="http://www.gnu.org/licenses/gpl.html">GNU GPLv3+</license>
+	<notes>-</notes>
+	<contents>
+		<dir baseinstalldir="/" name="/">
+			<file name="privacy.php" role="php">
+				<tasks:replace from="@name@" to="name" type="package-info"/>
+				<tasks:replace from="@package_version@" to="version" type="package-info"/>
+			</file>
+			<file name="config.inc.php.dist" role="data"/>
+			<file name="README.md" role="data"/>
+			<file name="localization/en_GB.inc" role="data"/>
+			<file name="localization/en_US.inc" role="data"/>
+			<file name="skins/classic/tabstyles.css" role="data"/>
+			<file name="skins/larry/listicons.png" role="data"/>
+			<file name="skins/larry/tabstyles.css" role="data"/>
+		</dir>
+		<!-- / -->
+	</contents>
+	<dependencies>
+		<required>
+			<php>
+				<min>5.2.1</min>
+			</php>
+			<pearinstaller>
+				<min>1.7.0</min>
+			</pearinstaller>
+		</required>
+	</dependencies>
+	<phprelease/>
+</package>

@@ -1,0 +1,14 @@
+/**
+ * Privacy plugin styles (tab styles)
+ */
+
+#sections-table #rcmrowprivacy td.section
+{
+  background-image: url(listicons.png);
+  background-position: 6px 1px;
+}
+
+#sections-table #rcmrowprivacy.selected td.section
+{
+  background-position: 6px -23px;
+}
